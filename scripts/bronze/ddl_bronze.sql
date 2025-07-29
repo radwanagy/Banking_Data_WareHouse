@@ -33,7 +33,7 @@ CREATE TABLE bronze.crm_accounts (
     customer_id    INT,
     account_type   NVARCHAR(50),
     balance        INT,
-    create_date    DATE,
+    create_date    DATE
    
 );
 GO
