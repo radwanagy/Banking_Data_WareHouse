@@ -1,6 +1,6 @@
 # Banking_Data_WareHouse
 ---
-=============================================================
+
 Create Database and Schemas
 =============================================================
 Script Purpose:
@@ -13,4 +13,5 @@ WARNING:
     All data in the database will be permanently deleted. Proceed with caution 
     and ensure you have proper backups before running this script.
 */
+
 ---
