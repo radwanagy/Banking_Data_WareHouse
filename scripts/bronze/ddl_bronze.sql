@@ -84,11 +84,11 @@ CREATE TABLE bronze.crm_support_calls (
 );
 GO  
 
-IF OBJECT_ID('bronze.crm_transaction', 'U') IS NOT NULL
-    DROP TABLE bronze.crm_transaction;
+IF OBJECT_ID('bronze.crm_transactions', 'U') IS NOT NULL
+    DROP TABLE bronze.crm_transactions;
 GO
 
-CREATE TABLE bronze.crm_transaction (
+CREATE TABLE bronze.crm_transactions (
     transaction_id        INT,
     account_id            INT,
    transaction_type       NVARCHAR(50),
