@@ -99,7 +99,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_support_calls;
 		PRINT '>> Inserting Data Into: bronze.crm_support_calls';
 		BULK INSERT bronze.crm_support_calls
-		FROM "C:\Windows\Temp\BankingDB\datasets\crm_support_calls.csv'
+		FROM 'C:\Windows\Temp\BankingDB\datasets\crm_support_calls.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
