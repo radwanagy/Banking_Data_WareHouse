@@ -50,7 +50,7 @@ BEGIN
 
 		PRINT '>> Inserting Data Into: bronze.crm_accounts';
 		BULK INSERT bronze.crm_accounts
-		FROM '"C:\Windows\Temp\BankingDB\datasets\crm_accounts.csv"'
+		FROM 'C:\Windows\Temp\BankingDB\datasets\crm_accounts.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
