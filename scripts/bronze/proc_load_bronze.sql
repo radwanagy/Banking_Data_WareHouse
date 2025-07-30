@@ -34,7 +34,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_cust_info;
 		PRINT '>> Inserting Data Into: bronze.crm_cust_info';
 		BULK INSERT bronze.crm_cust_info
-		FROM 'C:\sql\dwh_project\datasets\source_crm\cust_info.csv'
+		FROM 'C:\Users\radwa\Desktop\BankingDB\datasets\crm_cust_info.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -45,12 +45,12 @@ BEGIN
 		PRINT '>> -------------';
 
         SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: bronze.crm_prd_info';
-		TRUNCATE TABLE bronze.crm_prd_info;
+		PRINT '>> Truncating Table: bronze.crm_accounts';
+		TRUNCATE TABLE bronze.crm_accounts;
 
-		PRINT '>> Inserting Data Into: bronze.crm_prd_info';
-		BULK INSERT bronze.crm_prd_info
-		FROM 'C:\sql\dwh_project\datasets\source_crm\prd_info.csv'
+		PRINT '>> Inserting Data Into: bronze.crm_accounts';
+		BULK INSERT bronze.crm_accounts
+		FROM 'C:\Users\radwa\Desktop\BankingDB\datasets\crm_accounts.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -61,11 +61,11 @@ BEGIN
 		PRINT '>> -------------';
 
         SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: bronze.crm_sales_details';
-		TRUNCATE TABLE bronze.crm_sales_details;
-		PRINT '>> Inserting Data Into: bronze.crm_sales_details';
-		BULK INSERT bronze.crm_sales_details
-		FROM 'C:\sql\dwh_project\datasets\source_crm\sales_details.csv'
+		PRINT '>> Truncating Table: bronze.crm_cards';
+		TRUNCATE TABLE bronze.crm_cards;
+		PRINT '>> Inserting Data Into: bronze.crm_cards';
+		BULK INSERT bronze.crm_cards
+		FROM 'C:\Users\radwa\Desktop\BankingDB\datasets\crm_cards.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -80,11 +80,11 @@ BEGIN
 		PRINT '------------------------------------------------';
 		
 		SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: bronze.erp_loc_a101';
-		TRUNCATE TABLE bronze.erp_loc_a101;
-		PRINT '>> Inserting Data Into: bronze.erp_loc_a101';
-		BULK INSERT bronze.erp_loc_a101
-		FROM 'C:\sql\dwh_project\datasets\source_erp\loc_a101.csv'
+		PRINT '>> Truncating Table: bronze.crm_loans';
+		TRUNCATE TABLE bronze.crm_loans;
+		PRINT '>> Inserting Data Into: bronze.crm_loans';
+		BULK INSERT bronze.crm_loans
+		FROM 'C:\Users\radwa\Desktop\BankingDB\datasets\crm_loans.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -95,11 +95,11 @@ BEGIN
 		PRINT '>> -------------';
 
 		SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: bronze.erp_cust_az12';
-		TRUNCATE TABLE bronze.erp_cust_az12;
-		PRINT '>> Inserting Data Into: bronze.erp_cust_az12';
-		BULK INSERT bronze.erp_cust_az12
-		FROM 'C:\sql\dwh_project\datasets\source_erp\cust_az12.csv'
+		PRINT '>> Truncating Table: bronze.crm_support_calls';
+		TRUNCATE TABLE bronze.crm_support_calls;
+		PRINT '>> Inserting Data Into: bronze.crm_support_calls';
+		BULK INSERT bronze.crm_support_calls
+		FROM 'C:\Users\radwa\Desktop\BankingDB\datasets\crm_support_calls.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -110,11 +110,11 @@ BEGIN
 		PRINT '>> -------------';
 
 		SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: bronze.erp_px_cat_g1v2';
-		TRUNCATE TABLE bronze.erp_px_cat_g1v2;
-		PRINT '>> Inserting Data Into: bronze.erp_px_cat_g1v2';
-		BULK INSERT bronze.erp_px_cat_g1v2
-		FROM 'C:\sql\dwh_project\datasets\source_erp\px_cat_g1v2.csv'
+		PRINT '>> Truncating Table: bronze.crm_transactions';
+		TRUNCATE TABLE bronze.crm_transactions;
+		PRINT '>> Inserting Data Into: bronze.crm_transactions';
+		BULK INSERT bronze.crm_transactions
+		FROM 'C:\Users\radwa\Desktop\BankingDB\datasets\crm_transactions.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
