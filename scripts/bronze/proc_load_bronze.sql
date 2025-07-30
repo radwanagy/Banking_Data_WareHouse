@@ -34,7 +34,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_cust_info;
 		PRINT '>> Inserting Data Into: bronze.crm_cust_info';
 		BULK INSERT bronze.crm_cust_info
-		FROM 'C:\SQL2022\BankingDB\datasets\crm_cust_info.csv'
+		FROM 'C:\Windows\Temp\BankingDB\datasets\crm_cust_info.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -50,7 +50,7 @@ BEGIN
 
 		PRINT '>> Inserting Data Into: bronze.crm_accounts';
 		BULK INSERT bronze.crm_accounts
-		FROM 'C:\SQL2022\BankingDB\datasets\crm_accounts.csv'
+		FROM '"C:\Windows\Temp\BankingDB\datasets\crm_accounts.csv"'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -65,7 +65,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_cards;
 		PRINT '>> Inserting Data Into: bronze.crm_cards';
 		BULK INSERT bronze.crm_cards
-		FROM 'C:\SQL2022\BankingDB\datasets\crm_cards.csv'
+		FROM 'C:\Windows\Temp\BankingDB\datasets\crm_cards.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -84,7 +84,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_loans;
 		PRINT '>> Inserting Data Into: bronze.crm_loans';
 		BULK INSERT bronze.crm_loans
-		FROM 'C:\SQL2022\BankingDB\datasets\crm_loans.csv'
+		FROM 'C:\Windows\Temp\BankingDB\datasets\crm_loans.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -99,7 +99,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_support_calls;
 		PRINT '>> Inserting Data Into: bronze.crm_support_calls';
 		BULK INSERT bronze.crm_support_calls
-		FROM 'C:\SQL2022\BankingDB\datasets\crm_support_calls.csv'
+		FROM "C:\Windows\Temp\BankingDB\datasets\crm_support_calls.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -114,7 +114,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_transactions;
 		PRINT '>> Inserting Data Into: bronze.crm_transactions';
 		BULK INSERT bronze.crm_transactions
-		FROM 'C:\SQL2022\BankingDB\datasets\crm_transactions.csv'
+		FROM 'C:\Windows\Temp\BankingDB\datasets\crm_transactions.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
