@@ -19,7 +19,7 @@ CREATE TABLE silver.crm_cust_info (
     cst_lastname        NVARCHAR(50),
     cst_phone           INT,
     cst_email           NVARCHAR(50),
-    cst_address         NVARCHAR(50),
+    cst_address         NVARCHAR(255),
     cst_joindate        DATEو 
    dwh_create_date    DATETIME2 DEFAULT GETDATE()
   
@@ -65,7 +65,7 @@ CREATE TABLE  silver.crm_loans (
     loan_id         INT,
     customer_id     INT,
     loan_type       NVARCHAR(50),
-    loan_amount     INT,
+    loan_amount     FLOAT,
     interest_rate   INT, 
     loan_start_date DATE,
     loan_end_date  DATEو
@@ -99,7 +99,7 @@ CREATE TABLE silver.crm_transactions (
     account_id            INT,
    transaction_type       NVARCHAR(50),
     amount                INT,
-    transaction_date      DATE, 
+    transaction_date      DATETIME, 
    dwh_create_date    DATETIME2 DEFAULT GETDATE()
    
 );
